@@ -39,7 +39,7 @@ CloudWatch Logs
     - Repository name: devops-training-repo
 
      aws codecommit create-repository \
-      --repository-name devops-training-repo-rama \
+      --repository-name devops-training-repo-chakraveni \
       --repository-description "DevOps Training Repository" --profile devops
 
 ---
@@ -51,8 +51,8 @@ CloudWatch Logs
 
 # STEP 2 – Clone Repository
 
-    git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/devops-training-repo-rama
-    cd devops-training-repo-rama
+    git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/devops-training-repo-chakraveni
+    cd devops-training-repo-chakraveni
 
 ---
 
