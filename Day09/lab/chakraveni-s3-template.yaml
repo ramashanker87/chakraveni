@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Create an S3 bucket
+
+Resources:
+  ChakraveniS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: chakraveni-day09-bucket-12345
+
+Outputs:
+  BucketName:
+    Value: !Ref ChakraveniS3Bucket
