@@ -4,7 +4,7 @@ Description: Simple EC2 Deployment using CloudFormation
 
 Resources:
 
-  ChakraveniSecurityGroup:
+  chakraveniSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Allow SSH and HTTP
@@ -21,17 +21,17 @@ Resources:
           ToPort: 80
           CidrIp: 0.0.0.0/0
 
-  ChakraveniEC2Instance:
+  chakraveniEC2Instance:
     Type: AWS::EC2::Instance
 
     Properties:
       ImageId: ami-00e801948462f718a
       InstanceType: t2.micro
-      KeyName: Chakraveni-ec2
+      KeyName: chakraveni-ec2
 
       SecurityGroups:
-        - !Ref ChakraveniSecurityGroup
+        - !Ref chakraveniSecurityGroup
 
       Tags:
         - Key: Name
-          Value: ChakraveniEC2Instance-Day09
+          Value: chakraveniEC2Instance-Day09
